@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+
     <link rel="stylesheet" href="home.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,28 +14,41 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div>
+      <!-- Navigation -->
       <div class="header">
-        <a href="#Aboutme"> About Me</a>
-        <a href="#Skills"> Skills</a>
-        <a href="#projects"> Projects</a>
-        <a href="#education"> Education</a>
-        <a href="#Resume"> Resume</a>
-        <a href="#Contact"> Contact</a>
+        <a href="#Aboutme">About Me</a>
+        <a href="#Skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#Resume">Resume</a>
+        <a href="#Contact">Contact</a>
       </div>
 
+      <!-- Hero -->
       <h1 id="name">Kevin Varghese Portfolio</h1>
       <h3 id="name">Aspiring Software Engineer & Cybersecurity Engineer</h3>
 
+      <!-- About Me -->
       <section id="Aboutme" class="section">
         <h2>About Me</h2>
-        <p style="line-height: 4">
-          I am a computing and security-focused developer with hands-on experience building secure, real-time systems across web, networking, and embedded platforms. My interests include system security, backend development, and monitoring critical infrastructure. I enjoy designing software that emphasizes reliability, security, and performance, and I am actively building projects aligned with cybersecurity and high-impact engineering environments.
+        <p>
+          I am a computing and security-focused developer with hands-on
+          experience building secure, real-time systems across web, networking,
+          and embedded platforms. My interests include system security, backend
+          development, and monitoring critical infrastructure. I enjoy designing
+          software that emphasizes reliability, security, and performance, and I
+          am actively building projects aligned with cybersecurity and
+          high-impact engineering environments.
         </p>
       </section>
+
+      <!-- Skills -->
       <section id="Skills" class="section">
         <h2>Skills</h2>
+
         <table>
           <tr>
             <td>Python</td>
@@ -56,73 +71,81 @@
             <td>TCP/IP Networking</td>
           </tr>
           <tr>
-            <td>Threat detection and prevention</td>
+            <td>Threat Detection & Prevention</td>
+            <td>Cybersecurity Concepts</td>
           </tr>
-          <tr> <td><td>Cybersecurity Concepts</td></td></tr>
         </table>
       </section>
 
+      <!-- Projects -->
       <section id="projects" class="section">
-        <h2 style="font-size: 30px">Projects</h2>
-        <h5>ESP32 Smart Security Controller</h5>
-        <p style="line-height: 2">
-          I built a security monitoring system using an ESP32 microcontroller
-          that detects motion and triggers alerts in real time. The device reads
-          an IR sensor, communicates with a FastAPI backend, and updates a live
-          dashboard so users can see activity the moment it happens. The system
-          was designed with low latency, reliability, and simplicity in mind so
-          it can be deployed in small-scale home or lab environments.
+        <h2>Projects</h2>
+
+        <h4>ESP32 Smart Security Controller</h4>
+
+        <p>Real-time IoT security system for motion detection and alerting.</p>
+
+        <p>
+          <strong>Tech:</strong> ESP32, Python, C, FastAPI, Firebase, React,
+          Linux
         </p>
+
         <ul>
-          <li style="line-height: 4">
-            real-time motion detection using an IR sensor connected to the
-            ESP32.
+          <li>
+            Engineered an ESP32-based motion detection system that securely
+            transmits sensor events to a backend API
           </li>
-          <li style="line-height: 4">
-            Instant alerting through API calls to a FASTAPI backend.
+          <li>
+            Designed RESTful services with input validation to ensure integrity
+            of device-to-server communication
           </li>
-          <li style="line-height: 4">
-            Web dashboard (React + Firebase) that displays sensor state and
-            event history.
+          <li>
+            Implemented real-time alerting and dashboard updates with sub-second
+            end-to-end latency
           </li>
         </ul>
-        <h3>What I learned</h3>
-        <p style="line-height: 3">
-          hrough this project, I learned how to work with microcontroller GPIO,
-          design reliable sensor logic, and send data quickly from the ESP32 to
-          a FastAPI backend. I also built a real-time dashboard and improved my
-          ability to debug embedded devices, handle async updates, and connect
-          hardware, backend, and frontend systems smoothly.
-        </p>
-        <h3>DEMO</h3>
-        <video controls width="500" height="500">
+
+        <h4>Demo</h4>
+        <video controls width="500">
           <source src="esp32.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
       </section>
 
+      <!-- Education -->
       <section id="education" class="section">
-        <h3>Education</h3>
-        <p style="line-height: 4">
+        <h2>Education</h2>
+        <p>
           Currently completing a B.S. in Computing & Security Technology at
           Drexel University, building strong foundations in software
           engineering, networking, and cybersecurity.
         </p>
       </section>
 
+      <!-- Resume -->
       <section id="Resume" class="section">
         <h2>Resume</h2>
-        <p>
-          <iframe src="Kevin-Varghese-Resume.pdf" width="100%" height="600px">
-          </iframe>
-        </p>
+        <iframe
+          src="Kevin-Varghese-Resume.pdf"
+          width="100%"
+          height="600"
+        ></iframe>
       </section>
 
+      <!-- Contact -->
       <section id="Contact" class="section">
         <h2>Contact</h2>
-        <p style="line-height: 4">
-          Email: kevinvarghese250@gmail.com | Linkedin:
-          www.linkedin.com/in/kevinvarghese1 | GitHub:
-          https://github.com/Darktheo-dev
+        <p>
+          <strong>Email:</strong> kevinvarghese250@gmail.com <br />
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/kevinvarghese1" target="_blank">
+            linkedin.com/in/kevinvarghese1
+          </a>
+          <br />
+          <strong>GitHub:</strong>
+          <a href="https://github.com/Darktheo-dev" target="_blank">
+            github.com/Darktheo-dev
+          </a>
         </p>
       </section>
     </div>
